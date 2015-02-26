@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="books">
+        <item >宝贝</item>
+        <item >店铺</item>
+    </string-array>
+    <string-array name="produce">
+        <item >全部商品</item>
+        <item >库存紧张</item>
+        <item >失效商品</item>
+    </string-array>
+    
+</resources>

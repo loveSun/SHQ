@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" >
+
+        <ImageView
+            android:id="@+id/name"
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:background="@drawable/t5" />
+
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/name"
+            android:text="淘宝推荐"
+            android:textSize="10dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/name"
+            android:text="产品简介"
+            android:textSize="10dp"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</LinearLayout>

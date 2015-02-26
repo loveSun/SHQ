@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.example.xiaoguo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageButton
+        android:id="@+id/leftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:background="@drawable/ic_launcher"
+        android:layout_toLeftOf="@+id/vf"
+        android:layout_marginRight="-25dp"
+        android:contentDescription="left" />
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:flipInterval="5000"
+        android:inAnimation="@anim/right"
+        android:outAnimation="@anim/left"
+        android:persistentDrawingCache="animation" >
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="string/linux" />
+
+        <ImageView
+            android:id="@+id/im2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="string/archlinux" />
+
+        <ImageView
+            android:id="@+id/im3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="string/centos" />
+
+        <ImageView
+            android:id="@+id/im4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="string/deepin" />
+
+        <ImageView
+            android:id="@+id/im5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="fedora" />
+        
+    </ViewFlipper>
+
+    <ImageButton
+        android:id="@+id/rightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/vf"
+        android:layout_marginLeft="-25dp"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/ic_launcher"
+        android:contentDescription="right" />
+</RelativeLayout>

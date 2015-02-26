@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<include layout="@layout/head"/>
+    <LinearLayout
+        android:id="@+id/ll01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@layout/head"
+        android:gravity="center_horizontal"
+        
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/detail_bottombar_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_goods"
+                android:text="     商品"
+                android:layout_width="55dp"
+                android:textColor="#D05E5E"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/selec"
+                android:textSize="11sp" />
+             <RadioButton
+                android:id="@+id/radio_dian"
+                 android:layout_width="55dp"
+                android:text="    店铺"
+                android:textColor="#D05E5E"
+                 android:background="@drawable/selec"
+                android:button="@null"
+                
+                android:textSize="11sp" />
+            
+        </RadioGroup>
+        <EditText
+            android:id="@+id/home_search_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="8"
+            android:background="#D4D4D4"
+            android:drawableLeft="@drawable/search_icon"
+            android:focusableInTouchMode="false"
+            android:hint="请输入要搜索的商品"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <net.yasite.view.XListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/ll01"
+        android:layout_marginTop="80dp"
+         >
+    </net.yasite.view.XListView>
+
+</RelativeLayout>

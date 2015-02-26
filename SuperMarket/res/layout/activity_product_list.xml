@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+  >
+  
+	<TextView 
+	    android:id="@+id/title_all"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:text="   查找"
+	    android:gravity="center_vertical"
+	    android:background="#FB9200"
+	    android:textColor="#FCFEFF"
+	    />
+     <AutoCompleteTextView
+         android:id="@+id/autoCompleteTextView1"
+         android:layout_width="wrap_content"
+         
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="15dp"
+         android:completionThreshold="2"
+         android:layout_below="@+id/title_all"
+         android:dropDownWidth="300dp"
+         android:dropDownHorizontalOffset="10dp"
+         android:ems="15"
+         android:textColor="#C90000"
+         android:textSize="11sp" >
+         <requestFocus />
+         
+     </AutoCompleteTextView>
+
+     <net.yasite.view.XListView
+       android:id="@+id/list_view"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/autoCompleteTextView1"
+       android:layout_marginTop="10dp"
+        >
+
+    </net.yasite.view.XListView>
+
+     <ImageButton
+         android:id="@+id/imageButton1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_alignTop="@+id/autoCompleteTextView1"
+         android:layout_toRightOf="@+id/autoCompleteTextView1"
+         android:src="@drawable/search"/>
+
+</RelativeLayout>

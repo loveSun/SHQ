@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+ 	
+    android:layout_height="match_parent" >
+    <include layout="@layout/head"/>
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="用户注册"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        />
+
+	<EditText
+	    android:id="@+id/regist_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/title"
+	    android:layout_marginTop="15dp"
+	    android:layout_centerHorizontal="true"
+	    android:ems="10"
+	    android:textColor="#86CE46"
+	    android:hint="请输入用户名"
+	    >
+	    <requestFocus />
+	</EditText>
+	<TextView 
+	    android:id="@+id/name_check"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="用户名长度不能小于六位"
+		android:layout_below="@+id/regist_name"
+		android:layout_alignRight="@+id/regist_name"
+		android:textColor="#C90000"	 
+		android:visibility="gone"   
+	    />
+	<EditText 
+	    android:id="@+id/regist_pass"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/name_check"
+	    android:layout_marginTop="10dp"
+	    android:hint="请输入密码"
+	    android:textColor="#86CE46"
+	    android:ems="10"
+	    android:layout_centerHorizontal="true"
+	    />
+	<TextView 
+	    android:id="@+id/pass_check"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="密码长度不能小于六位"
+		android:layout_below="@+id/regist_pass"
+		android:layout_alignRight="@+id/regist_name"
+		android:visibility="gone"  
+		android:textColor="#C90000"	    
+	    />
+	<EditText 
+	    android:id="@+id/enter_pass"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/pass_check"
+	    android:layout_marginTop="10dp"
+	    android:hint="确认密码"
+	    android:textColor="#86CE46"
+	    android:ems="10"
+	    android:layout_centerHorizontal="true"
+	    />
+	<TextView 
+	    android:id="@+id/enterpass_check"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="密码不一致，请重新输入"
+		android:layout_below="@+id/enter_pass"
+		android:layout_alignRight="@+id/regist_name"
+		android:visibility="gone"  
+		android:textColor="#C90000"	    
+	    />
+	<Button 
+        android:id="@+id/register_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="注  册"
+        android:background="@drawable/button_select"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/enterpass_check"
+        android:layout_marginTop="25dp"
+        />
+</RelativeLayout>

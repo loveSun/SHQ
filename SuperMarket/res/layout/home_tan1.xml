@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/ww"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/lim"
+        android:layout_centerHorizontal="true" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lim"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+        <RelativeLayout
+                    android:id="@+id/layout_homebotton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/detail_bottombar_background"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                         >
+
+                        <RadioButton
+                            android:id="@+id/radio_home"
+                            android:checked="true"
+                            android:drawableTop="@drawable/tab_selector_home"
+                            android:text="首页"
+                            android:gravity="center_horizontal"
+                            android:textSize="11sp"
+                            android:button="@null"
+                            android:textColor="#82CD4B"
+                            android:layout_weight="1" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_fen"
+                            android:drawableTop="@drawable/tab_selector_service"
+                            android:text="分类"
+                            android:gravity="center_horizontal"
+                            android:textSize="11sp"
+                            android:button="@null"
+                            android:textColor="#82CD4B"
+                            android:layout_weight="1"/>
+                        <RadioButton
+                            android:id="@+id/radio_regist"
+                            android:drawableTop="@drawable/tab_selector_mintao"
+                            android:text="注册"
+                            android:gravity="center_horizontal"   
+                            android:button="@null"
+                            android:textSize="11sp"  
+                            android:textColor="#82CD4B"                   
+                            android:layout_weight="1"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_cart"
+                            android:drawableTop="@drawable/tab_selector_cart"
+                            android:text="购物车"
+                            android:gravity="center_horizontal"
+                            android:button="@null"
+                            android:textColor="#82CD4B"
+                            android:textSize="11sp"
+                            android:layout_weight="1"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_account"
+                            android:drawableTop="@drawable/tab_selector_account"
+                            android:text="我的淘宝"
+                            android:gravity="center_horizontal"
+                            android:textColor="#82CD4B"
+                            android:button="@null"
+                            android:textSize="11sp"
+                            android:layout_weight="1" />
+                    </RadioGroup>
+                </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

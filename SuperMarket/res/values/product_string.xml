@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<string-array name="product_arr">
+   	    <item>"三星 I9300"</item>
+   	    <item>"华为 P6"</item>
+   	    <item>"HTC One X"</item>
+   	    <item>"苹果 Ihone4s"</item>
+   	    <item>"苹果 Ihone5s"</item>
+   	    <item>"诺基亚 N800"</item>
+   	</string-array>
+   	<integer-array name="price_arr">
+   	    <item>2900</item>
+   	    <item>2000</item>
+   	    <item>1900</item>
+   	    <item>3200</item>
+   	    <item>4200</item>
+   	    <item>1500</item>
+   	</integer-array>
+<!--    	<integer-array name="imageIds"> -->
+<!--    	    <item>@drawable/sanxing</item> -->
+<!--    	    <item>@drawable/huawei</item> -->
+<!--    	    <item>@drawable/htc</item> -->
+<!--    	    <item>@drawable/ipone4s</item> -->
+<!--    	    <item>@drawable/ipone5s</item> -->
+<!--    	    <item>@drawable/nokia</item> -->
+<!--    	</integer-array> -->
+</resources>

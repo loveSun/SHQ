@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="5dp"
+    >
+    
+    <ImageView 
+        android:id="@+id/thumb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView 
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumb"
+        android:layout_marginLeft="5dp"
+        android:text="woaini"
+        android:layout_marginTop="5dp"
+        />
+    <TextView 
+        android:id="@+id/market_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_name"
+        android:layout_toRightOf="@id/thumb"
+        android:layout_marginLeft="5dp"
+         android:text="mmmmm"
+        android:layout_marginTop="5dp"
+        
+        />
+    <TextView 
+        android:id="@+id/promote_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_name"
+        android:layout_toRightOf="@id/market_price"
+        android:layout_marginLeft="5dp"
+         android:text="ppppppp"
+        android:layout_marginTop="5dp"
+        />
+    
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!--图片自动播放-->
+    <attr name="auto_play" forMymat="boolean" />
+    <declare-styleable name="SlidingSwitcherView">
+        <attr name="auto_play" />
+    </declare-styleable>
+    <!-- 设置截取图片为圆形属性 -->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+</resources>
